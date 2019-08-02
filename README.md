@@ -17,7 +17,7 @@ No menu Amigos podemos gerenciar nossos amigos. Ao clicar em adicionar um amigo,
 
 Podemos atualizar da mesma forma, digitando o endereço e o mapa é atualizado.
 
-O Swagger pode ser visto na pagina onde roda o webapi, digitando após o endereço /swagger, caso esteja na mesma porta, será o seguinte endereço:
+O Swagger pode ser visto na pagina onde roda o webapi, digitando após o endereço /swagger, caso esteja na mesma porta, será a seguinte url:
 
 http://localhost:58665/swagger
 
