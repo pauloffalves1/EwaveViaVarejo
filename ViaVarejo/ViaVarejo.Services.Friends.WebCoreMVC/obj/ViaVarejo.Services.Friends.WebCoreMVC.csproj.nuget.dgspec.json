@@ -1,0 +1,143 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Paulo\\Documents\\GitHub\\EwaveViaVarejo\\ViaVarejo\\ViaVarejo.Services.Friends.WebCoreMVC\\ViaVarejo.Services.Friends.WebCoreMVC.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Paulo\\Documents\\GitHub\\EwaveViaVarejo\\ViaVarejo\\ViaVarejo.Services.Friends.Domain\\ViaVarejo.Services.Friends.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Paulo\\Documents\\GitHub\\EwaveViaVarejo\\ViaVarejo\\ViaVarejo.Services.Friends.Domain\\ViaVarejo.Services.Friends.Domain.csproj",
+        "projectName": "ViaVarejo.Services.Friends.Domain",
+        "projectPath": "C:\\Users\\Paulo\\Documents\\GitHub\\EwaveViaVarejo\\ViaVarejo\\ViaVarejo.Services.Friends.Domain\\ViaVarejo.Services.Friends.Domain.csproj",
+        "packagesPath": "C:\\Users\\Paulo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Paulo\\Documents\\GitHub\\EwaveViaVarejo\\ViaVarejo\\ViaVarejo.Services.Friends.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Paulo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.Spatial": {
+              "target": "Package",
+              "version": "[7.6.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Paulo\\Documents\\GitHub\\EwaveViaVarejo\\ViaVarejo\\ViaVarejo.Services.Friends.WebCoreMVC\\ViaVarejo.Services.Friends.WebCoreMVC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Paulo\\Documents\\GitHub\\EwaveViaVarejo\\ViaVarejo\\ViaVarejo.Services.Friends.WebCoreMVC\\ViaVarejo.Services.Friends.WebCoreMVC.csproj",
+        "projectName": "ViaVarejo.Services.Friends.WebCoreMVC",
+        "projectPath": "C:\\Users\\Paulo\\Documents\\GitHub\\EwaveViaVarejo\\ViaVarejo\\ViaVarejo.Services.Friends.WebCoreMVC\\ViaVarejo.Services.Friends.WebCoreMVC.csproj",
+        "packagesPath": "C:\\Users\\Paulo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Paulo\\Documents\\GitHub\\EwaveViaVarejo\\ViaVarejo\\ViaVarejo.Services.Friends.WebCoreMVC\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Paulo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\Paulo\\Documents\\GitHub\\EwaveViaVarejo\\ViaVarejo\\ViaVarejo.Services.Friends.Domain\\ViaVarejo.Services.Friends.Domain.csproj": {
+                "projectPath": "C:\\Users\\Paulo\\Documents\\GitHub\\EwaveViaVarejo\\ViaVarejo\\ViaVarejo.Services.Friends.Domain\\ViaVarejo.Services.Friends.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
+            "System.Collections.NonGeneric": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

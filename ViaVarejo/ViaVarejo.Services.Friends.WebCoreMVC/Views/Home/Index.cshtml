@@ -1,0 +1,98 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Amigos mais próximos</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="ddlFriendsDropdown" class="col-form-label">Qual amigo você se encontra ?:</label>
+            <select id="ddlFriendsDropdown" class="form-control"></select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <table id="example" class="display cell-border" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nome</th>
+                        <th>Distância (Km)</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+<script>
+
+    function LoadComboAmigos() {
+
+        $.ajax({
+            type: "GET",
+            url: "Friends/GetFriends",
+            contentType: "application/json; charset=utf-8",
+            success: function (data) {
+                $.each(data, function (index, value) {
+                    $('#ddlFriendsDropdown').append('<option value="' + value.id + '">' + value.name + '</option>');
+                });
+            }
+        });
+    }
+
+    function carregaDataTable(data) {
+
+        //let friendJson = {
+        //    "id": data
+        //};
+
+        var table = $("#example").dataTable({
+            "destroy": true,
+            "processing": false,
+            "serverSide": true,
+            "ajax": {
+                "url": "Friends/GetThreeClosestFriends/" + data,
+                "method": "GET"
+            },
+            "columns": [
+                { "data": "id" },
+                { "data": "name" },
+                { "data": "distance" }
+            ],
+            "searching": false,
+            "sorting": false,
+            "ordering": false,
+            "paging": false,
+            "pagingType": "full_numbers",
+            "pageLength": 10,
+            "DisplayStart": 0
+        });
+    }
+
+    $(document).ready(function () {
+
+        $("#example").dataTable({
+            "searching": false,
+            "sorting": false,
+            "ordering": false,
+            "paging": false,
+            "pagingType": "full_numbers",
+            "pageLength": 10
+        });
+
+        LoadComboAmigos();
+
+        $('#ddlFriendsDropdown').on('change', function () {
+
+            carregaDataTable(this.value);
+
+        });
+    });
+</script>
+}
