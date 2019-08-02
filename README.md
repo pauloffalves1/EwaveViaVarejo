@@ -32,3 +32,5 @@ Todo projeto tem seu próprio desafio e por mais que seja um teste sempre criamo
 Fazia muito tempo que não utilizava a api do google maps, e teve um pouco de estudo na api para carregar o mapa e localizar o endereço, só não avancei para conseguir pegar a latitude a longitude quando arrasta no mapa, função drag do maps, pelo prazo de entrega do teste, mas deveria criar um listener, que acho bem legal essa função.
 
 Acredito que é uma simples aplicação mas que utiliza de conceitos bem legais e modernos de codificação assincrona e em tarefas.
+
+O tempo gasto para desenvolver o projeto foi de 16 horas.
